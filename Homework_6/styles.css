@@ -1,0 +1,290 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* -------------------------------Index Page Styling--------------------------------------------- */
+
+body.main {
+    background-color: blanchedalmond;
+}
+
+.mainContainer {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 5px 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-right: 1px solid #bbb;
+}
+/* -------------------------------First Layer--------------------------------------------- */
+.f_s_b{
+    display: table-cell;
+    outline: 2px solid black;
+    background-color: aqua;
+}
+
+/* -------------------------------Second Layer----------------------------------------------- */
+
+.s_s_b_o{
+    width: 800px;
+    display: table-cell;
+    outline: 2px solid black;
+}
+
+.s_s_b_tw{
+    width: 400px;
+    display: table-cell;
+    outline: 2px solid black;
+}
+
+.s_s_b_l{
+    outline: 2px solid black;
+    background-color: lime;
+}
+/* -------------------------------Third Layer--------------------------------------------- */
+
+
+.s_t_b_o{
+    display: table-cell;
+    width: 400px;
+    outline: 2px solid black;
+    background-color: orange;
+}
+
+.s_t_b_tw{
+    display: table-cell;
+    width: 800px;
+    outline: 2px solid black;
+}
+
+.s_t_b_tw_l_o{
+    outline: 2px solid black;
+    background-color: orange;
+}
+
+.s_t_b_tw_l_tw{
+    outline: 2px solid black;
+    background-color: orange;
+}
+
+.s_t_b_tw_l_tw_b{
+    display: table-cell;
+    width: 400px;
+    outline: 2px solid black;
+    background-color: orange;
+}
+/* -------------------------------Fourth Layer--------------------------------------------- */
+
+.s_f_b_o{
+    display: table-cell;
+    width: 800px;
+    outline: 2px solid black;
+}
+
+.s_f_b_tw{
+    display: table-cell;
+    width: 400px;
+    outline: 2px solid black;
+    background-color: crimson;
+}
+
+.s_f_b_o_l_o{
+    outline: 2px solid black;
+    background-color: crimson;
+}
+
+.s_f_b_o_l_tw_b{
+    display: table-cell;
+}
+.s_f_b_o_l_tw_b_o{
+    display: table-cell;
+}
+
+.s_f_b_o_l_tw_b_tw{
+    display: table-cell;
+    outline: 2px solid black;
+    background-color: crimson;
+}
+
+.s_f_b_o_l_tw_b_o_b{
+    outline: 2px solid black;
+    background-color: crimson;
+}
+
+/* -------------------------------Inline section--------------------------------------------- */
+
+/* -------------------------------Section One--------------------------------------------- */
+
+.inl_sectionOne{
+    font-size: 0px;
+    text-align: justify;
+}
+
+.inl_sectionOne_b{
+    width: 400px;
+    font-size: 15px;
+    display: inline-block;
+    outline: 1px solid black;
+    font-size: 15px;
+    background-color: aqua;
+}
+
+/* -------------------------------Section Two--------------------------------------------- */
+.inl_sectionTwo{
+    font-size: 0px;
+    text-align: justify;
+}
+.inl_sectionTwo_b_o{
+    display: inline-block;
+    font-size: 15px;
+    width: 800px;
+}
+
+.inl_sectionTwo_b_tw{
+    display: inline-block;
+    font-size: 15px;
+    width: 400px;
+}
+
+.inl_sectionTwo_block{
+    background-color: green;
+    outline: 1px solid black;
+}
+
+/* -------------------------------Section Three--------------------------------------------- */
+
+.inl_sectionThree{
+    font-size: 0px;
+    text-align: justify;
+}
+
+.inl_sectionThree_b_o{
+    display: inline-block;
+    font-size: 15px;
+    width: 400px;
+    background-color: orange;
+    outline: 1px solid black;
+}
+
+.inl_sectionThree_b_tw{
+    display: inline-block;
+    
+}
+
+.inl_sectionThree_b_tw_l_o{
+    width: 800px;
+    font-size: 15px;
+    outline: 1px solid black;
+    background-color: orange;
+}
+
+.inl_sectionThree_b_tw_l_tw_block{
+    display: inline-block;
+    font-size: 15px;
+    width: 400px;
+    outline: 1px solid black;
+    background-color: orange;
+}
+
+/* -------------------------------Section Three--------------------------------------------- */
+
+.inl_sectionFour{
+    font-size: 0px;
+    text-align: justify;
+}
+
+.inl_sectionFour_b_o{
+    width: 800px;
+    display: inline-block;
+}
+
+.inl_sectionFour_b_o_l_o{
+    font-size: 15px;
+    background-color: crimson;
+    outline: 1px solid black;
+}
+
+.inl_sectionFour_b_o_l_tw_l_o{
+    display: inline-block;
+    width: 400px;
+}
+
+.inl_sectionFour_b_o_l_tw_l_o_blockOne{
+    font-size: 15px;
+    background-color: crimson;
+    outline: 1px solid black;
+}
+
+.inl_sectionFour_b_o_l_tw_l_tw{
+    width: 400px;
+    display: inline-block;
+    font-size: 15px;
+    background-color: crimson;
+    outline: 1px solid black;
+}
+
+.inl_sectionFour_b_tw{
+    display: inline-block;
+    width: 400px;
+    font-size: 15px;
+    background-color: crimson;
+    outline: 1px solid black;
+}
