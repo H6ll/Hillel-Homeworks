@@ -244,7 +244,7 @@ li a {
     background-color: orange;
 }
 
-/* -------------------------------Section Three--------------------------------------------- */
+/* -------------------------------Section Four--------------------------------------------- */
 
 .inl_sectionFour{
     font-size: 0px;
@@ -380,4 +380,110 @@ li a {
     float: left;
     outline: 1px solid black;
     background-color: crimson;
+}
+
+/* -------------------------------Flexbox section--------------------------------------------- */
+.justife_flex{
+    text-align: justify;
+}
+/* -------------------------------Section One--------------------------------------------- */
+
+.flexbox_1{
+    display: flex;
+}
+
+.flexblock{
+    flex-basis: 400px;
+    outline: 1px solid black;
+    background-color: aqua;
+}
+
+/* -------------------------------Section Two--------------------------------------------- */
+.flexbox_2{
+    display: flex;
+}
+
+.flexbox_2>.fl_b_one{
+    flex-basis: 800px;
+}
+
+.flexbox_2>.fl_b_two{
+    flex-basis: 400px;
+}
+
+.flexbox_2>.fl_b_one>div{
+    outline: 1px solid black;
+    background-color: green;
+}
+
+.flexbox_2>.fl_b_two>div{
+    outline: 1px solid black;
+    background-color: green;
+}
+
+/* -------------------------------Section Three--------------------------------------------- */
+.flexbox_3{
+    display: flex;
+}
+
+.flexbox_3>.fl_b_one
+{
+    flex-basis: 400px;
+    outline: 1px solid black;
+    background-color: orange;
+}
+
+.flexbox_3>.fl_b_two{
+    flex-basis: 800px;
+}
+
+.fl_b_two_l_one{
+    outline: 1px solid black;
+    background-color: orange;
+}
+
+.fl_b_two_l_two{
+    display: flex;
+}
+
+.fl_b_two_l_two_b{
+    flex-basis: 400px;
+    outline: 1px solid black;
+    background-color: orange;
+}
+/* -------------------------------Section Four--------------------------------------------- */
+
+.flexbox_4{
+    display: flex;
+}
+
+.flexbox_4>.fl_b_one
+{
+    flex-basis: 800px;
+}
+
+.fl_b_one>.fl_b_two_l_one{
+    outline: 1px solid black;
+    background-color: crimson;
+}
+
+.fl_b_two_l_two_b_one{
+    flex-basis: 400px;
+}
+
+.fl_b_two_l_two_b_one>div{
+    outline: 1px solid black;
+    background-color: crimson;
+}
+
+.fl_b_two_l_two_b_two{
+    flex-basis: 400px;
+    outline: 1px solid black;
+    background-color: crimson;
+}
+
+.flexbox_4>.fl_b_two{
+    outline: 1px solid black;
+    background-color: crimson;
+    flex-basis: 400px;
 }
