@@ -491,3 +491,149 @@ li a {
 /* -------------------------------Grid-Columns section--------------------------------------------- */
 
 /* -------------------------------Section One--------------------------------------------- */
+
+.grid_one{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid_one_el{
+    outline: 1px solid black;
+    background-color: aqua;
+}
+
+/* -------------------------------Section Two--------------------------------------------- */
+
+.grid_two{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.grid_two_el{
+    outline: 1px solid black;
+    background-color: green;
+}
+
+/* -------------------------------Section Three--------------------------------------------- */
+
+.grid_three{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.grid_three_section_one{
+    outline: 1px solid black;
+    background-color: orange;
+}
+
+.grid_three_layer_two{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid_three_layer_element{
+    outline: 1px solid black;
+    background-color: orange;
+}
+
+/* -------------------------------Section Four--------------------------------------------- */
+
+.grid_four{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.grid_four_layer_one{
+    outline: 1px solid black;
+    background-color: crimson;
+}
+
+.grid_four_layer_two{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid_four_layer_two_el{
+    outline: 1px solid black;
+    background-color: crimson;
+}
+
+.grid_four_section_two{
+    outline: 1px solid black;
+    background-color: crimson;
+}
+
+/* -------------------------------Grid-Areas section--------------------------------------------- */
+
+.main_grid{
+    display: grid;
+    
+    grid-template-areas: 
+    "a b c"
+    "d d e"
+    "f f e"
+    "f f g"
+    "h h g"
+    "i j j"
+    "i k l"
+    "m m n"
+    "o q n"
+    "p q n"
+    ;
+}
+
+.in_grid{
+    padding: 10px;
+    outline: 1px solid black;
+}
+
+.box_1{
+    grid-area: a;
+}
+.box_2{
+    grid-area: b;
+}
+.box_3{
+    grid-area: c;
+}
+.box_4{
+    grid-area: d;
+}
+.box_5{
+    grid-area: f;
+}
+.box_6{
+    grid-area: h;
+}
+.box_7{
+    grid-area: e;
+}
+.box_8{
+    grid-area: g;
+}
+.box_9{
+    grid-area: i;
+}
+.box_10{
+    grid-area: j;
+}
+.box_11{
+    grid-area: k;
+}
+.box_12{
+    grid-area: l;
+}
+.box_13{
+    grid-area: m;
+}
+.box_14{
+    grid-area: n;
+}
+.box_15{
+    grid-area: o;
+}
+.box_16{
+    grid-area: p;
+}
+.box_17{
+    grid-area: q;
+}
