@@ -54,6 +54,11 @@ body.main {
     padding: 5px 0;
 }
 
+.navigationBar{
+    position: sticky;
+    top: 0px;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
