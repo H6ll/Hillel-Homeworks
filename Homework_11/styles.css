@@ -160,6 +160,12 @@ p.header {
     border-bottom: 1px solid #bbb;
 }
 
+/* -------------------------------Active Page Styling--------------------------------------------- */
+
+li.active{
+    background-color: rgb(121, 84, 84);
+}
+
 /* -------------------------------Gallery Page Styling--------------------------------------------- */
 
 .description a{
