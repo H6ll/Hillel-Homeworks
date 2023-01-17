@@ -1,7 +1,7 @@
 /* -------------------------------Home Page Styling--------------------------------------------- */
 
 body.main {
-    background-color: blanchedalmond;
+    background-color: #759AAB;
     margin: 0px;
 }
 
@@ -53,7 +53,7 @@ body.main {
 .secondary-menu{
     position: absolute;
     list-style: none;
-    padding: 0px;
+    padding: 5px 0px 0px 0px;
     display: none;
     top: 100%;
 }
@@ -61,6 +61,7 @@ body.main {
 .secondary-menu li{
     border-bottom: 1px solid #bbb;
     background-color: #333;
+    
 }
 
 .secondary-menu li:last-child{
@@ -71,17 +72,56 @@ body.main {
     display: block;
     padding: 14px 16px;
     color: aliceblue;
+    white-space: nowrap;
 }
 
 .multimenu:hover .secondary-menu{
     display: block;
 }
 
+/* -------------------------------Sub Float Styling--------------------------------------------- */
+
+.sub-menu-float{
+    position: relative;
+}
+
+.sub-float{
+    position: absolute;
+    list-style: none;
+    padding-left: 5px;
+    top: 0;
+    left: 100%;
+    display: none;
+}
+
+.sub-menu-float:hover .sub-float{
+    display: block;
+}
+
+/* -------------------------------Sub Grid Styling--------------------------------------------- */
+
+.sub-menu-grid{
+    position: relative;
+}
+
+.sub-grid{
+    position: absolute;
+    list-style: none;
+    padding-right: 5px;
+    bottom: 0;
+    right: 100%;
+    display: none;
+}
+
+.sub-menu-grid:hover .sub-grid{
+    display: block;
+}
+
 /* ---------------------------------------------------------------------------- */
 
 h1 {
-    border: 10px solid pink;
-    background-color: aqua;
+    border: 10px solid #E4572E;
+    background-color: #FAF2A1;
 }
 
 p {
@@ -162,4 +202,570 @@ div a{
 
 .imgContainer:hover .overlay{
     opacity: 1;
+}
+
+/* -------------------------------Table-cell Page Styling--------------------------------------------- */
+
+/* -------------------------------First Layer--------------------------------------------- */
+.f_s_b{
+    display: table-cell;
+    width: 400px;
+    outline: 2px solid black;
+    background-color: aqua;
+}
+
+/* -------------------------------Second Layer----------------------------------------------- */
+
+.s_s_b_o{
+    width: 800px;
+    display: table-cell;
+    outline: 2px solid black;
+}
+
+.s_s_b_tw{
+    width: 400px;
+    display: table-cell;
+    outline: 2px solid black;
+}
+
+.s_s_b_l{
+    outline: 2px solid black;
+    background-color: lime;
+}
+/* -------------------------------Third Layer--------------------------------------------- */
+
+
+.s_t_b_o{
+    display: table-cell;
+    width: 400px;
+    outline: 2px solid black;
+    background-color: orange;
+}
+
+.s_t_b_tw{
+    display: table-cell;
+    width: 800px;
+    outline: 2px solid black;
+}
+
+.s_t_b_tw_l_o{
+    outline: 2px solid black;
+    background-color: orange;
+}
+
+.s_t_b_tw_l_tw{
+    outline: 2px solid black;
+    background-color: orange;
+}
+
+.s_t_b_tw_l_tw_b{
+    display: table-cell;
+    width: 400px;
+    outline: 2px solid black;
+    background-color: orange;
+}
+/* -------------------------------Fourth Layer--------------------------------------------- */
+
+.s_f_b_o{
+    display: table-cell;
+    width: 800px;
+    outline: 2px solid black;
+}
+
+.s_f_b_tw{
+    display: table-cell;
+    width: 400px;
+    outline: 2px solid black;
+    background-color: crimson;
+}
+
+.s_f_b_o_l_o{
+    outline: 2px solid black;
+    background-color: crimson;
+}
+
+.s_f_b_o_l_tw_b_o{
+    display: table-cell;
+    width: 400px;
+}
+
+.s_f_b_o_l_tw_b_tw{
+    display: table-cell;
+    width: 400px;
+    outline: 2px solid black;
+    background-color: crimson;
+}
+
+.s_f_b_o_l_tw_b_o_b{
+    outline: 2px solid black;
+    background-color: crimson;
+}
+
+/* -------------------------------Inline section--------------------------------------------- */
+
+/* -------------------------------Section One--------------------------------------------- */
+
+.inl_sectionOne{
+    font-size: 0px;
+    text-align: justify;
+}
+
+.inl_sectionOne_b{
+    width: 400px;
+    font-size: 15px;
+    display: inline-block;
+    outline: 1px solid black;
+    font-size: 15px;
+    background-color: aqua;
+}
+
+/* -------------------------------Section Two--------------------------------------------- */
+.inl_sectionTwo{
+    font-size: 0px;
+    text-align: justify;
+}
+.inl_sectionTwo_b_o{
+    display: inline-block;
+    font-size: 15px;
+    width: 800px;
+}
+
+.inl_sectionTwo_b_tw{
+    display: inline-block;
+    font-size: 15px;
+    width: 400px;
+}
+
+.inl_sectionTwo_block{
+    background-color: green;
+    outline: 1px solid black;
+}
+
+/* -------------------------------Section Three--------------------------------------------- */
+
+.inl_sectionThree{
+    font-size: 0px;
+    text-align: justify;
+}
+
+.inl_sectionThree_b_o{
+    display: inline-block;
+    font-size: 15px;
+    width: 400px;
+    background-color: orange;
+    outline: 1px solid black;
+}
+
+.inl_sectionThree_b_tw{
+    display: inline-block;
+    
+}
+
+.inl_sectionThree_b_tw_l_o{
+    width: 800px;
+    font-size: 15px;
+    outline: 1px solid black;
+    background-color: orange;
+}
+
+.inl_sectionThree_b_tw_l_tw_block{
+    display: inline-block;
+    font-size: 15px;
+    width: 400px;
+    outline: 1px solid black;
+    background-color: orange;
+}
+
+/* -------------------------------Section Four--------------------------------------------- */
+
+.inl_sectionFour{
+    font-size: 0px;
+    text-align: justify;
+}
+
+.inl_sectionFour_b_o{
+    width: 800px;
+    display: inline-block;
+}
+
+.inl_sectionFour_b_o_l_o{
+    font-size: 15px;
+    background-color: crimson;
+    outline: 1px solid black;
+}
+
+.inl_sectionFour_b_o_l_tw_l_o{
+    display: inline-block;
+    width: 400px;
+}
+
+.inl_sectionFour_b_o_l_tw_l_o_blockOne{
+    font-size: 15px;
+    background-color: crimson;
+    outline: 1px solid black;
+}
+
+.inl_sectionFour_b_o_l_tw_l_tw{
+    width: 400px;
+    display: inline-block;
+    font-size: 15px;
+    background-color: crimson;
+    outline: 1px solid black;
+}
+
+.inl_sectionFour_b_tw{
+    display: inline-block;
+    width: 400px;
+    font-size: 15px;
+    background-color: crimson;
+    outline: 1px solid black;
+}
+
+/* -------------------------------Float section--------------------------------------------- */
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* -------------------------------Section One--------------------------------------------- */
+
+.float_sectionOne_block{
+    width: 400px;
+    float: left;
+    outline: 1px solid black;
+    background-color: aqua;
+}
+/* -------------------------------Section Two--------------------------------------------- */
+
+.float_sectionTwo_block_one{
+    width: 800px;
+    float: left;
+}
+
+.float_sectionTwo_block_one_in{
+    outline: 1px solid black;
+    background-color: green;
+}
+
+.float_sectionTwo_block_two{
+    width: 400px;
+    float: left;
+}
+
+/* -------------------------------Section Three--------------------------------------------- */
+
+.float_sectionThree_block_one{
+    width: 400px;
+    float: left;
+    outline: 1px solid black;
+    background-color: orange;
+}
+
+.float_sectionThree_block_two{
+    width: 800px;
+    float: left;
+}
+
+.float_sectionThree_block_two_l_one{
+    outline: 1px solid black;
+    background-color: orange;
+}
+
+.float_sectionThree_block_two_l_two_block{
+    width: 400px;
+    float: left;
+    outline: 1px solid black;
+    background-color: orange;
+}
+
+/* -------------------------------Section Four--------------------------------------------- */
+
+.float_sectionFor_block_one{
+    width: 800px;
+    float: left;
+}
+
+.float_sectionFor_block_one_l_one{
+    outline: 1px solid black;
+    background-color: crimson;
+}
+
+.float_sectionFor_block_one_l_two_block_one{
+    width: 400px;
+    float: left;
+}
+
+.float_sectionFor_block_one_l_two_block_one_brick{
+    outline: 1px solid black;
+    background-color: crimson;
+}
+
+.float_sectionFor_block_one_l_two_block_two{
+    width: 400px;
+    float: left;
+    outline: 1px solid black;
+    background-color: crimson;
+}
+
+.float_sectionFour_block_two{
+    width: 400px;
+    float: left;
+    outline: 1px solid black;
+    background-color: crimson;
+}
+
+/* -------------------------------Flexbox section--------------------------------------------- */
+.justife_flex{
+    text-align: justify;
+}
+/* -------------------------------Section One--------------------------------------------- */
+
+.flexbox_1{
+    display: flex;
+}
+
+.flexblock{
+    flex-basis: 400px;
+    outline: 1px solid black;
+    background-color: aqua;
+}
+
+/* -------------------------------Section Two--------------------------------------------- */
+.flexbox_2{
+    display: flex;
+}
+
+.flexbox_2>.fl_b_one{
+    flex-basis: 800px;
+}
+
+.flexbox_2>.fl_b_two{
+    flex-basis: 400px;
+}
+
+.flexbox_2>.fl_b_one>div{
+    outline: 1px solid black;
+    background-color: green;
+}
+
+.flexbox_2>.fl_b_two>div{
+    outline: 1px solid black;
+    background-color: green;
+}
+
+/* -------------------------------Section Three--------------------------------------------- */
+.flexbox_3{
+    display: flex;
+}
+
+.flexbox_3>.fl_b_one
+{
+    flex-basis: 400px;
+    outline: 1px solid black;
+    background-color: orange;
+}
+
+.flexbox_3>.fl_b_two{
+    flex-basis: 800px;
+}
+
+.fl_b_two_l_one{
+    outline: 1px solid black;
+    background-color: orange;
+}
+
+.fl_b_two_l_two{
+    display: flex;
+}
+
+.fl_b_two_l_two_b{
+    flex-basis: 400px;
+    outline: 1px solid black;
+    background-color: orange;
+}
+/* -------------------------------Section Four--------------------------------------------- */
+
+.flexbox_4{
+    display: flex;
+}
+
+.flexbox_4>.fl_b_one
+{
+    flex-basis: 800px;
+}
+
+.fl_b_one>.fl_b_two_l_one{
+    outline: 1px solid black;
+    background-color: crimson;
+}
+
+.fl_b_two_l_two_b_one{
+    flex-basis: 400px;
+}
+
+.fl_b_two_l_two_b_one>div{
+    outline: 1px solid black;
+    background-color: crimson;
+}
+
+.fl_b_two_l_two_b_two{
+    flex-basis: 400px;
+    outline: 1px solid black;
+    background-color: crimson;
+}
+
+.flexbox_4>.fl_b_two{
+    outline: 1px solid black;
+    background-color: crimson;
+    flex-basis: 400px;
+}
+
+/* -------------------------------Grid-Columns section--------------------------------------------- */
+
+/* -------------------------------Section One--------------------------------------------- */
+
+.grid_one{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid_one_el{
+    outline: 1px solid black;
+    background-color: aqua;
+}
+
+/* -------------------------------Section Two--------------------------------------------- */
+
+.grid_two{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.grid_two_el{
+    outline: 1px solid black;
+    background-color: green;
+}
+
+/* -------------------------------Section Three--------------------------------------------- */
+
+.grid_three{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.grid_three_section_one{
+    outline: 1px solid black;
+    background-color: orange;
+}
+
+.grid_three_layer_two{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid_three_layer_element{
+    outline: 1px solid black;
+    background-color: orange;
+}
+
+/* -------------------------------Section Four--------------------------------------------- */
+
+.grid_four{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.grid_four_layer_one{
+    outline: 1px solid black;
+    background-color: crimson;
+}
+
+.grid_four_layer_two{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid_four_layer_two_el{
+    outline: 1px solid black;
+    background-color: crimson;
+}
+
+.grid_four_section_two{
+    outline: 1px solid black;
+    background-color: crimson;
+}
+
+/* -------------------------------Grid-Areas section--------------------------------------------- */
+
+.main_grid{
+    display: grid;
+    
+    grid-template-areas: 
+    "a b c"
+    "d d e"
+    "f f e"
+    "f f g"
+    "h h g"
+    "i j j"
+    "i k l"
+    "m m n"
+    "o q n"
+    "p q n"
+    ;
+}
+
+.in_grid{
+    padding: 10px;
+    outline: 1px solid black;
+}
+
+.box_1{
+    grid-area: a;
+}
+.box_2{
+    grid-area: b;
+}
+.box_3{
+    grid-area: c;
+}
+.box_4{
+    grid-area: d;
+}
+.box_5{
+    grid-area: f;
+}
+.box_6{
+    grid-area: h;
+}
+.box_7{
+    grid-area: e;
+}
+.box_8{
+    grid-area: g;
+}
+.box_9{
+    grid-area: i;
+}
+.box_10{
+    grid-area: j;
+}
+.box_11{
+    grid-area: k;
+}
+.box_12{
+    grid-area: l;
+}
+.box_13{
+    grid-area: m;
+}
+.box_14{
+    grid-area: n;
+}
+.box_15{
+    grid-area: o;
+}
+.box_16{
+    grid-area: p;
+}
+.box_17{
+    grid-area: q;
 }

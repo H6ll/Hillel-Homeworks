@@ -42,43 +42,8 @@ table {
 	border-spacing: 0;
 }
 
-/* -------------------------------Index Page Styling--------------------------------------------- */
+/* -------------------------------Table-cell Page Styling--------------------------------------------- */
 
-body.main {
-    background-color: blanchedalmond;
-}
-
-.mainContainer {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 5px 0;
-}
-
-.navigationBar{
-    position: sticky;
-    top: 0px;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    border-right: 1px solid #bbb;
-}
 /* -------------------------------First Layer--------------------------------------------- */
 .f_s_b{
     display: table-cell;
