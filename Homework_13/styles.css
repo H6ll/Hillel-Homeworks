@@ -111,14 +111,15 @@ body.main {
     position: absolute;
     list-style: none;
     padding: 5px 0px 0px 0px;
-    display: none;
     top: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0,0,1,1);
 }
 
 .secondary-menu li{
     border-bottom: 1px solid #bbb;
     background-color: #333;
-    
 }
 
 .secondary-menu li:last-child{
@@ -133,7 +134,8 @@ body.main {
 }
 
 .multimenu:hover .secondary-menu{
-    display: block;
+    opacity: 1;
+    pointer-events: all;
 }
 
 /* -------------------------------Sub Float Styling--------------------------------------------- */
@@ -148,11 +150,15 @@ body.main {
     padding-left: 5px;
     top: 0;
     left: 100%;
-    display: none;
+    max-width: 0px;
+    font-size: 0;
+    transition: all 0.2s ease;
 }
 
 .sub-menu-float:hover .sub-float{
     display: block;
+    max-width: 5000px;
+    font-size: 16px;
 }
 
 /* -------------------------------Sub Grid Styling--------------------------------------------- */
@@ -167,11 +173,15 @@ body.main {
     padding-right: 5px;
     bottom: 0;
     right: 100%;
-    display: none;
+    max-width: 0px;
+    font-size: 0;
+    transition: all 0.2s;
 }
 
 .sub-menu-grid:hover .sub-grid{
     display: block;
+    max-width: 5000px;
+    font-size: 16px;
 }
 
 /* ---------------------------------------------------------------------------- */
