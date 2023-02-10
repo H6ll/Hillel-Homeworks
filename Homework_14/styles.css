@@ -39,6 +39,7 @@ body.main {
     padding: 10px 10px 10px 35px;
     color: aliceblue;
     position: relative;
+    text-transform: uppercase;
 }
 
 .mainNavigationBar>li>a::before, .mainNavigationBar>.blocks>.secondary-menu>.float-icon>a::before, .mainNavigationBar>.blocks>.secondary-menu>.grid-icon>a::before{
@@ -68,7 +69,7 @@ body.main {
 .mainNavigationBar>.blocks>a::before{
     background-position: -62px -114px;
     top: 0;
-    left: 57px;
+    right: 0;
 }
 
 .mainNavigationBar>.blocks:hover>a::before{
@@ -95,11 +96,13 @@ body.main {
     left: 0;
 }
 
+
+
 .mainNavigationBar li:hover{
     background-color: rgb(70, 70, 70);
 }
 
-/* -------------------------------First Sub Menu Styling--------------------------------------------- */
+/* -------------------------------Secondary Nav Styling--------------------------------------------- */
 
 .multimenu{
     position: relative;
@@ -109,14 +112,15 @@ body.main {
     position: absolute;
     list-style: none;
     padding: 5px 0px 0px 0px;
-    display: none;
     top: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0,0,1,1);
 }
 
 .secondary-menu li{
     border-bottom: 1px solid #bbb;
     background-color: #333;
-    
 }
 
 .secondary-menu li:last-child{
@@ -131,7 +135,8 @@ body.main {
 }
 
 .multimenu:hover .secondary-menu{
-    display: block;
+    opacity: 1;
+    pointer-events: all;
 }
 
 /* -------------------------------Sub Float Styling--------------------------------------------- */
@@ -146,11 +151,15 @@ body.main {
     padding-left: 5px;
     top: 0;
     left: 100%;
-    display: none;
+    max-width: 0px;
+    font-size: 0;
+    transition: all 0.2s ease;
 }
 
 .sub-menu-float:hover .sub-float{
     display: block;
+    max-width: 5000px;
+    font-size: 16px;
 }
 
 /* -------------------------------Sub Grid Styling--------------------------------------------- */
@@ -165,14 +174,96 @@ body.main {
     padding-right: 5px;
     bottom: 0;
     right: 100%;
-    display: none;
+    max-width: 0px;
+    font-size: 0;
+    transition: all 0.2s;
 }
 
 .sub-menu-grid:hover .sub-grid{
     display: block;
+    max-width: 5000px;
+    font-size: 16px;
 }
 
-/* ---------------------------------------------------------------------------- */
+/* -------------------------------Hover Me Block Styling--------------------------------------------- */
+
+.hover-me{
+   position: fixed;
+   display: flex;
+   flex-direction: column;
+   width: 200px;
+   height: 160px;
+   gap: 50px;
+   margin: 0;
+   top: 50%;
+   right: -158px;
+   transform: translate(50%, 0);
+   rotate: -90deg;
+   transition: all 1s ease;
+}
+
+.hover-me-button{
+    text-transform: uppercase;
+    padding: 0 5px;
+    letter-spacing: 5px;
+    background-color: #bbb;
+    border: 1px solid black;
+    border-radius: 30px;
+    font-size: 15px;
+    transition: all 1s linear;
+
+}
+
+.soc-wrap{
+    rotate: 45deg;
+}
+
+.side-socials{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-grid;
+    font-size: 0;
+    gap: 10px;
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+.soc-wrap .side-socials li a{
+   display: block;
+   border-radius: 10px;
+
+}
+
+.side-socials li>a::before{
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url('img/social-hover-me.png') -62px -10px;
+}
+
+.side-socials li.twi>a::before{
+    background-position: -114px -10px;
+}
+
+.side-socials li.insta>a::before{
+    background-position: -166px -10px;
+}
+
+.side-socials li.git>a::before{
+    background-position: -10px -10px;
+}
+
+.hover-me:hover{
+    right: -20px;
+}
+
+.hover-me:hover .hover-me-button{
+    transform: rotateY(90deg);
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------- */
 
 h1 {
     border: 10px solid #E4572E;
