@@ -380,9 +380,16 @@ div a{
     line-height: normal;
 }
 
+
 .imgContainer:hover .overlay{
     opacity: 1;
+    background-image: linear-gradient( red, yellow);
+    color: transparent;
+    -webkit-background-clip: text;
+    font-size: 30px;
+    font-weight: 900;
 }
+
 
 /* -------------------------------Table-cell Page Styling--------------------------------------------- */
 
